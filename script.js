@@ -11,9 +11,10 @@ const input = document.querySelector('input');
                     const para = createParagraph('Supported commands: about, experience, education, projects, skills, contact');
                     document.querySelector('.commands').appendChild(para);
                 } else if (input.value.toLowerCase() === 'about') {
-                    const para = createParagraph('21 yaşında Sosyal Medya ile ilgilenen, Boş zamanlarında kodlama yapan bir yazılımcı.');
-                    document.querySelector('.commands').appendChild(para);
-                } else {
+    const para = createParagraph('21 yaşında Sosyal Medya ile ilgilenen, Boş zamanlarında kodlama yapan bir yazılımcı.');
+    document.querySelector('.commands').appendChild(para);
+}
+ else {
                     const para = createParagraph('→ command not found: ' + input.value);
                     document.querySelector('.commands').appendChild(para);
                 }
