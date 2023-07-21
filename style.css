@@ -1,150 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: #1f1f1f;
+  height: 100vh;
+  font-family: 'Anonymous Pro', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: #484a4e45;
+  width: 300px;
+  border-radius: 8px;
+  color: #eee;
+  margin-right: 20px;
+  text-align: center;
+  padding: 5px 20px;
 }
 
-:root{
-    --red: #ff7c7c;
-    --black: #21243d;
-    --blue: #88e1f2;
-    --yellow: #ffd082;
+.profile-card > div > h4{
+  margin: 10px;
 }
 
-.container{
-    width: 100%;
-    height: 100%;
+.profile-card > div > h6{
+font-size: 12px;
+  opacity: 0.5;
+  font-weight: 200;
 }
 
-.text__container{
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: var(--blue);
-    color: var(--black);
-    padding: 1rem 0 3rem 0;
+.terminal {
+  background: #191919;
+  width: 600px;
+  height: 300px;
+  border-radius: 8px;
+  overflow-x: hide;
+  overflow-y: auto;
 }
 
-.text__container p{
-    max-width: 600px;
-    margin: 1rem auto;
+.terminal > p{
+  padding-left: 5px;
+  color: #888;
+  font-size: 12px;
+  padding-top: 3px;
+  margin-top: 25px;
 }
 
-/* FORM */
-.shortener__container{
-    height: 120px;
-    width: 100%;
+p > span {
+  color: #fa615c;
+  font-weight: bold;
 }
 
-.back__color{
-    background-color: var(--blue);
-    height: 50px;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 200px;
-    left: 0;
+.buttons {
+  background: #2a2a2a;
+  border-radius: 8px 8px 0px 0px;
+  padding-left: 15px;
+  padding-top: 5px;
+  display: flex;
+  position: fixed;
+  width: 600px;
 }
 
-.input__container{
-    z-index: 9;
-    background-color: var(--yellow);
-    margin: 15px auto;
-    max-width: 800px;
-    height: 70px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+.red {
+  background: #fa615c;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
 }
 
-.input__container input{
-    height: 35px;
-    width: 80%;
-    margin: auto;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    padding-left: 1rem;
-    color: var(--black);
-    font-size: 16px;
+.yellow {
+  background: #ffbd48;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+    margin-right: 5px;
 }
 
-.input__container button{
-    height: 35px;
-    width: 80%;
-    margin: auto;
-    background-color: var(--red);
-    color: white;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+.green {
+  background: #3fc950;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
 }
 
-.error__msg{
-    background-color: var(--red);
-    max-width: 300px;
-    position: fixed;
-    top: 196px;
-    left: 50%;
-    transform: translateX(50%);
-    margin: auto;
-    z-index: 6;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    visibility: hidden;
-    transition: all 0.8s ease-in;
+input {
+  width: 75%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #999;
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  caret-color: transparent;
 }
 
-.error__msg #error{
-    color: white;
-    padding: 10px;
+label[for="command"] {
+  color: green;
+  padding-left: 5px;
+  font-size: 12px;
 }
 
-.error__msg.show{
-    visibility: visible;
-    transform: translateX(-150%);
+.heading {
+  color: #888;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 4px;
 }
 
-/* LINKS CONTAINER */
-
-.links__container{
-    max-width: 800px;
-    margin: auto;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.links__container .link{
-    border: var(--yellow) 1px solid;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 100px 50px 50px;
 }
 
-.link .long__link{
-    color: var(--red);
-    margin-left: 1rem;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+    border-radius: 8px;
 }
 
-.link .short__link{
-    display: flex;
-    justify-content: center;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-.link .copy__btn{
-    background-color: var(--blue);
-    padding: 3px 0;
-    width: 60px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
+.commands {
+  color: #888;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
