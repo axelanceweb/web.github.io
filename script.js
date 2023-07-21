@@ -7,10 +7,10 @@ const input = document.querySelector('input');
                 node.style.fontSize = '12px';
                 node.style.paddingLeft = '5px';
 
-                if (input.value === 'help') {
+                if (input.value.toLowerCase() === 'help') {
                     const para = createParagraph('Supported commands: about, experience, education, projects, skills, contact');
                     document.querySelector('.commands').appendChild(para);
-                } else if (input.value === 'about') {
+                } else if (input.value.toLowerCase() === 'about') {
                     const para = createParagraph('21 yaşında Sosyal Medya ile ilgilenen, Boş zamanlarında kodlama yapan bir yazılımcı.');
                     document.querySelector('.commands').appendChild(para);
                 } else {
