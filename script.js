@@ -12,7 +12,19 @@ document.addEventListener('keydown', function(e) {
 const text = document.createTextNode('Supported commands: about, experience, education, projects, skills, contact');
 para.appendChild(text);
             document.querySelector(".commands").appendChild(para);
-    }else{
+    }
+
+if(input.value === 'about')
+{
+const para = document.createElement("p");
+      para.style.display = 'block';
+const text = document.createTextNode('21 yaşında Sosyal Medya ile ilgilenen, Boş zamanlarında kodlama yapan bir yazılımcı.');
+para.appendChild(text);
+            document.querySelector(".commands").appendChild(para);
+
+}
+
+else{
       const para = document.createElement("p");
       para.style.display = 'block';
 const text = document.createTextNode('→ command not found:' + input.value);
