@@ -13,6 +13,21 @@ const input = document.querySelector('input');
                 } else if (input.value.toLowerCase() === 'about') {
     const para = createParagraph('21 yaşında Sosyal Medya ile ilgilenen, Boş zamanlarında kodlama yapan bir yazılımcı.');
     document.querySelector('.commands').appendChild(para);
+} else if (input.value.toLowerCase() === 'experience') {
+    const para = createParagraph('EXPERIENCE YAZI');
+    document.querySelector('.commands').appendChild(para);
+} else if (input.value.toLowerCase() === 'education') {
+    const para = createParagraph('education YAZI');
+    document.querySelector('.commands').appendChild(para);
+} else if (input.value.toLowerCase() === 'projects') {
+    const para = createParagraph('projects YAZI');
+    document.querySelector('.commands').appendChild(para);
+} else if (input.value.toLowerCase() === 'skills') {
+    const para = createParagraph('skills YAZI');
+    document.querySelector('.commands').appendChild(para);
+} else if (input.value.toLowerCase() === 'contact') {
+    const para = createParagraph('contact YAZI');
+    document.querySelector('.commands').appendChild(para);
 }
  else {
                     const para = createParagraph('→ command not found: ' + input.value);
