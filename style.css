@@ -39,6 +39,28 @@ font-size: 12px;
   font-weight: 200;
 }
 
+.profile-card .social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .profile-card .social-button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-card .social-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
 .terminal {
   background: #191919;
   width: 600px;
