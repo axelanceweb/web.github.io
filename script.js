@@ -13,20 +13,8 @@ const input = document.querySelector('input');
                 } else if (input.value.toLowerCase() === 'about') {
     const para = createParagraph('21 yaşında Sosyal Medya ile ilgilenen, Boş zamanlarında kodlama yapan bir yazılımcı.');
     document.querySelector('.commands').appendChild(para);
-} else if (input.value.toLowerCase() === 'experience') {
-    const para = createParagraph('EXPERIENCE YAZI');
-    document.querySelector('.commands').appendChild(para);
-} else if (input.value.toLowerCase() === 'education') {
-    const para = createParagraph('education YAZI');
-    document.querySelector('.commands').appendChild(para);
-} else if (input.value.toLowerCase() === 'projects') {
-    const para = createParagraph('projects YAZI');
-    document.querySelector('.commands').appendChild(para);
-} else if (input.value.toLowerCase() === 'skills') {
-    const para = createParagraph('skills YAZI');
-    document.querySelector('.commands').appendChild(para);
 } else if (input.value.toLowerCase() === 'contact') {
-    const para = createParagraph('contact YAZI');
+    const para = createParagraph('ulasmak isteyen herkes discord adresime gelsin. baska hicbir sekilde ulasamazsiniz.');
     document.querySelector('.commands').appendChild(para);
 }
  else {
